@@ -1,1 +1,1 @@
-FROM quay.io/astronomer/astro-runtime:13.3.0
+FROM astrocrpublic.azurecr.io/runtime:3.3-2
