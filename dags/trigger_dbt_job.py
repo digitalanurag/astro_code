@@ -15,6 +15,7 @@ with DAG(
     run_dbt_job = DbtCloudRunJobOperator(
         task_id="run_dbt_cloud_job",
         dbt_cloud_conn_id="astro_dbt_connn",
+        account_id=70506183155690,
         job_id=70506183136984,
         wait_for_termination=True,
         check_interval=10,
