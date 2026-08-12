@@ -1,0 +1,20 @@
+airflow:
+  connections:
+    - conn_id: dbt_cloud_default
+      conn_type: dbt_cloud
+      description: dbt Cloud API connection
+      login:            # Account ID (optional)
+      password:         # dbt Cloud API token
+      host:             # Tenant, e.g. cloud.getdbt.com
+      schema:
+      port:
+      extra:
+
+  variables:
+    - variable_name:
+      variable_value:
+
+  pools:
+    - pool_name:
+      pool_slot:
+      pool_description:
