@@ -17,6 +17,9 @@ with DAG(
         dbt_cloud_conn_id="astro_dbt_connn",
         account_id=70506183155690,
         job_id=70506183136984,
+        steps_override=[
+            "dbt run --select my_second_dbt_model"
+        ],
         wait_for_termination=True,
         check_interval=10,
     )
